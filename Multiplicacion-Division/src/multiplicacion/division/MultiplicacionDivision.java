@@ -17,16 +17,20 @@ public class MultiplicacionDivision {
     public static void main(String[] args) {
         Scanner d=new Scanner(System.in);
         int numero1,numero2,multiplicacion;
-        double division;
+        double division, resultado;
         System.out.println(" Ingrese Numero1 ");
         numero1= d.nextInt();
         System.out.println(" Ingrese Numero2 ");
         numero2= d.nextInt();
         
+        
+        
         multiplicacion= numero1*numero2;
         division= (double)numero1/numero2;
         System.out.println(" La Multiplicacion " + numero1 + "*" + numero2 + " =" + multiplicacion);
         System.out.println(" La Division " + numero1 + "/" + numero2 + " =" + division);
+        resultado= (double) Math.round(division);
+        System.out.println(" El Resultado aproximado de la division es" + resultado);
         // TODO code application logic here
     }
     
